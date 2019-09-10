@@ -1,4 +1,4 @@
-// Copyright Lion Kortlepel 2019
+// Copyright Lion Kortlepel 2019, licensed under MIT.
 #ifndef LKMATH_H
 #define LKMATH_H
 

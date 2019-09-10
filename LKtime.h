@@ -1,3 +1,4 @@
+// Copyright Lion Kortlepel 2019, licensed under MIT.
 #ifndef LKTIME_H
 #define LKTIME_H
 

@@ -8,10 +8,7 @@
 #include "LKmath.h"
 
 namespace LK
-{
-
-namespace time
-{
+{ namespace time {
 
 /// @name time_me
 /// @brief Measures a function's execution time 'n' times and returns mean and standard 
@@ -41,9 +38,6 @@ std::pair<double, double> time_me(_Fnc fnc, std::size_t n, _Args ...args)
     return { mean, std_dev };
 }
 
-}
-
-}
-
+}}
 
 #endif // LKTIME_H

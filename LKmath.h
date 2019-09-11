@@ -6,10 +6,7 @@
 #include <cmath>
 
 namespace LK
-{
-
-namespace math
-{
+{ namespace math {
 
 template<typename _T>
 _T standard_deviation(const std::vector<_T>& vec, _T mean)
@@ -36,8 +33,6 @@ _T mean(const std::vector<_T>& vec)
     return sum / vec.size();
 }
 
-}
-
-}
+}}
 
 #endif // LKMATH_H

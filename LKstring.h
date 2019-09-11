@@ -3,9 +3,7 @@
 #define LKSTRING_H
 
 #include <vector>
-#include <cstring>
 #include <string>
-#include <optional>
 
 namespace LK
 { namespace string {

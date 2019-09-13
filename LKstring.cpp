@@ -65,8 +65,29 @@ std::string LK::string::right_trim(const std::string& str, char trim)
 
 std::string LK::string::trim(const std::string& str, char trim)
 {
-    return LK::string::right_trim(LK::string::left_trim(str, trim), trim);
-    // FIXME: Rewrite to do it manually.
+    auto begin = str.begin();
+    auto end = str.end()-1;
+    while(*begin == trim) ++begin;
+    while(*end == trim) --end;
+    return std::string(begin, end+1);
+}
+
+bool is_in_array(char c, const char* chars)
+{
+    for (; *chars != '\0'; ++chars)
+    {
+        if (*chars == c) return true;
+    }
+    return false;
+}
+
+std::string LK::string::trim(const std::string& str, const char* chars)
+{
+    auto begin = str.begin();
+    auto end = str.end()-1;
+    while(is_in_array(*begin, chars)) ++begin;
+    while(is_in_array(*end, chars)) --end;
+    return std::string(begin, end+1);
 }
 
 std::string LK::string::replace(const std::string& str, const std::string& to_replace, const std::string& replace_with)
@@ -95,3 +116,14 @@ bool LK::string::ends_with(const std::string& str, char c)
     if (str.empty()) return false;
     return str[str.size()-1] == c;
 }
+
+
+
+
+
+
+
+
+
+
+

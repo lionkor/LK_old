@@ -13,6 +13,7 @@ std::vector<std::string> split(const std::string& str, char delim);
 std::string left_trim(const std::string& str, char trim = ' ');
 std::string right_trim(const std::string& str, char trim = ' ');
 std::string trim(const std::string& str, char trim = ' ');
+std::string trim(const std::string& str, const char* chars);
 
 std::string replace(const std::string& str, const std::string& to_replace, const std::string& replace_with);
 std::string replace(const std::string& str, char to_replace, char replace_with);

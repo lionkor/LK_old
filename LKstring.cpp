@@ -83,3 +83,15 @@ std::string LK::string::replace(const std::string& str, char to_replace, char re
     }
     return s;
 }
+
+bool LK::string::starts_with(const std::string& str, char c)
+{
+    if (str.empty()) return false;
+    return str[0] == c;
+}
+
+bool LK::string::ends_with(const std::string& str, char c)
+{
+    if (str.empty()) return false;
+    return str[str.size()-1] == c;
+}

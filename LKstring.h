@@ -17,6 +17,9 @@ std::string trim(const std::string& str, char trim = ' ');
 std::string replace(const std::string& str, const std::string& to_replace, const std::string& replace_with);
 std::string replace(const std::string& str, char to_replace, char replace_with);
 
+bool starts_with(const std::string& str, char c);
+bool ends_with(const std::string& str, char c);
+
 std::vector<std::string> trim_empty_elements(const std::vector<std::string>& str);
 std::vector<std::string> trim_empty_pairs(const std::vector<std::string>& str);
 
